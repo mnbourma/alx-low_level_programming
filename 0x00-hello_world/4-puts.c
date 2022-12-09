@@ -1,6 +1,11 @@
 #include <stdio.h>
 
-/* Print with puts */
+/*
+ * main - Entry point
+ *
+ * Print witht puts
+ * 
+ * Return: Always 0 (Success) */
 
 int main(void)
 {

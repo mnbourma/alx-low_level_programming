@@ -16,6 +16,5 @@ int main(void)
 	{
 		putchar(base16[i]);
 	}
-
 	return (0);
 }

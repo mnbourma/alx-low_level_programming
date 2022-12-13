@@ -12,7 +12,7 @@ int main(void)
 	char base16[] = "0123456789abcdef";
 	int i;
 
-	for (i = 0; i < 17; i++)
+	for (i = 0; i < 16; i++)
 	{
 		putchar(base16[i]);
 	}

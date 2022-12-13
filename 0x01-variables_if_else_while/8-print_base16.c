@@ -10,8 +10,9 @@
 int main(void)
 {
 	char base16[] = "0123456789abcdef";
+	int i;
 
-	for (int i = 0; i < strlen(base16); i++)
+	for (i = 0; i < strlen(base16); i++)
 	{
 		putchar(base16[i]);
 	}

@@ -1,12 +1,11 @@
 #include <stdio.h>
 #include <string.h>
-#include "main.h"
 /**
  *  main - Entry point
  *
  *  Return: Always 0 (Success)
  */
-int putchar(void)
+int main(void)
 {
 	char value[] = "_putchar";
 	int i;

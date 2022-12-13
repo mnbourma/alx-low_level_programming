@@ -9,12 +9,12 @@
  */
 int main(void)
 {
-	char base16[] = "abcdefghijklmnopqrstuvwxyz";
+	char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
 	int i;
 
-	for (i = 25; i = 0; i--)
+	for (i = 0; i < 26; i++)
 	{
-		putchar(base16[i]);
+		putchar(alphabet[25 - i]);
 	}
 
 	putchar('\n');

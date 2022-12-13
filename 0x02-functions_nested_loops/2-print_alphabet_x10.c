@@ -15,9 +15,6 @@ void print_alphabet_x10(void)
 		{
 			putchar(alphabets[j]);
 		}
-		if (i < 9)
-		{
-			putchar('\n');
-		}
+		putchar('\n');
 	}
 }

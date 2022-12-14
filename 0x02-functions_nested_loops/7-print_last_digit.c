@@ -10,9 +10,10 @@
 int print_last_digit(int c)
 {
 	char n[50];
+	int last_digit;
+	int size = sizeof(n) / sizeof(n[0]);
 
 	n[50] = c + '0';
-	int last_digit = n[sizeof(n) / sizeof(n[0]) - 1];
-
+	last_digit = n[size - 1];
 	return (last_digit);
 }

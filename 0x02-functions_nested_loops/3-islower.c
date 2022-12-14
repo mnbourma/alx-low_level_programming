@@ -3,11 +3,11 @@
 /**
  * _islower - checks if a char is lowercase
  *
- * @c: only member
+ * @c: argument to pass to _islower
  *
  * Return: 1 if lowercase and 0 otherwise
  */
-int _islower(char c)
+int _islower(int c)
 {
 	if (islower(c))
 	{

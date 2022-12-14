@@ -12,7 +12,7 @@ int print_last_digit(int c)
 	char n[50];
 
 	n[50] = c + '0';
-	int last_digit = n[sizeof(n) / sizeof(n[0]) - 1]
+	int last_digit = n[sizeof(n) / sizeof(n[0]) - ];
 
 	return (last_digit);
 }

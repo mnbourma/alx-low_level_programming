@@ -6,7 +6,7 @@
  *
  * Return: 1 if c is greator than 0 or 0 if c equal 0 and -1 otherwise
  */
-int _print_sign(int c)
+int print_sign(int c)
 {
 	if (c > 0)
 	{

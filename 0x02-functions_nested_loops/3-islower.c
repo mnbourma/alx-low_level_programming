@@ -9,7 +9,7 @@
  */
 int _islower(char c)
 {
-	if (islower != 0)
+	if (islower > 0)
 	{
 		return (1);
 	}

@@ -6,16 +6,18 @@
  */
 void print_to_98(int c)
 {
+	char number[] = c + '0';
+
 	while (c > 98)
 	{
-		putchar('%d', c);
+		putchar(number);
 		putchar(',');
 		putchar(' ';
 		c--;
 	}
 	while (c < 98)
         {
-                putchar('%d', c);
+                putchar(number);
                 putchar(',');
                 putchar(' ';
                 c--;

@@ -9,7 +9,9 @@
  */
 int print_last_digit(int c)
 {
-	char n[] = c + '0';
+	char n[];
+
+	n[] = c + '0';
 	int last_digit = n[sizeof(n) / sizeof(n[0]) - 1]
 
 	return (last_digit);

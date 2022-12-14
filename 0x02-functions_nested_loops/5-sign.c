@@ -18,6 +18,4 @@ int print_sign(int c)
 		putchar('0');
 		return (0);
 	}
-	putchar('-');
-	return (-1);
 }

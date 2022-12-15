@@ -13,10 +13,12 @@ void times_table(void)
 
 		for (j = 0; j < 10; j++)
 		{
-			char ab[] = i * j + '0';
-			int size = strlen(ab);
+			char ab[2];
+			int size;
 			int index = 0;
 
+			ab[2] = i * j +'0';
+			size = strlen(ab);
 			while (index < size)
 			{
 				putchar(ab[index]);

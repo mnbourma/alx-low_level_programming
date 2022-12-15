@@ -5,6 +5,8 @@
  * @a: first interger
  *
  * @b: second integer
+ *
+ * Return: returns some of two integer
  */
 int add(int a, int b)
 {

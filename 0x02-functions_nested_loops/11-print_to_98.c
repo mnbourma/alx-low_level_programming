@@ -10,14 +10,14 @@ void print_to_98(int c)
 	{
 		putchar(c + '0');
 		putchar(',');
-		putchar(' ';
+		putchar(' ');
 		c--;
 	}
 	while (c < 98)
         {
                 putchar(c + '0');
                 putchar(',');
-                putchar(' ';
+                putchar(' ');
                 c--;
         }
 	putchar('9');

@@ -20,6 +20,7 @@ void print_to_98(int c)
                 putchar(' ');
                 c--;
         }
-	putchar('98');
+	putchar('9');
+	putchar('8');
 	putchar('\n');
 }

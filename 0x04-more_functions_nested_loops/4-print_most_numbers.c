@@ -5,14 +5,11 @@
 void print_most_numbers(void)
 {
 	int i;
+	char c[] = "01356789";
 
-	for (i = 0; i < 10; i++)
+	for (i = 0; i < 8; i++)
 	{
-		if ((i != 2) || (i != 4))
-		{
-			putchar(i + '0');
-		}
-
+		putchar(c);
 	}
 	putchar('\n');
 }

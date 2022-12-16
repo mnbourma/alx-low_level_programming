@@ -9,7 +9,7 @@ void print_most_numbers(void)
 
 	for (i = 0; i < 8; i++)
 	{
-		putchar(c);
+		putchar(c[i]);
 	}
 	putchar('\n');
 }

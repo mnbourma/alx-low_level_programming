@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * print_line - Prints 0 to 14 ten times
+ * print_line - Prints a line made of _
  *
- * @n: length of line
+ * @n: number of how many _ to print
  **/
 void print_line(int n)
 {

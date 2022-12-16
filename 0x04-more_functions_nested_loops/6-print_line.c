@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- * print_line - Prints numbers, from 0 to 14 ten times, followed by a new line
+ * print_line - Prints 0 to 14 ten times
  *
  * @n: length of line
- */
+ **/
 void print_line(int n)
 {
 	int i;

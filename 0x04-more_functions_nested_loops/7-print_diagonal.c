@@ -20,7 +20,11 @@ void print_diagonal(int c)
 				_putchar(' ');
 			}
 			_putchar('\\');
-			_putchar('\n');
+			if (i < (c - 1))
+			{
+				_putchar('\n');
+			}
 		}
 	}
+	_putchar('\n');
 }

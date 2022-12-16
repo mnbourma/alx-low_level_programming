@@ -1,9 +1,8 @@
 #include <stdio.h>
 int _putchar(char c);
 /**
- * print_diagonal - Prints diagonal made of \
- *
- * @n: number of \ to print
+ * print_square - prints a square made of #
+ * @size: size of the square
  * */
 void print_square(int size)
 {

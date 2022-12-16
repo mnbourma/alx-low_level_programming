@@ -6,7 +6,7 @@
  * @c: argument to pass to _islower
  *
  * Return: 1 if uppercase and 0 otherwise
- */
+ **/
 int _isupper(int c)
 {
 	if (isupper(c))

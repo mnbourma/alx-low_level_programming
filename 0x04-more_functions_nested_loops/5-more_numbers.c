@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+#include <string.h>
 /**
  * more_numbers - Prints numbers, from 0 to 14 ten times, followed by a new line
  */
@@ -13,7 +14,14 @@ void more_numbers(void)
 
 		for (j = 0; j < 15; j++)
 		{
-			putchar(j + '0');
+			int k;
+			char c[10];
+
+			sprintf(c, "%d", j);
+			for (k = 0; k < strlen(c); k++)
+			{
+				putchar(c[k]);
+			}
 		}
 		if (i < 9)
 		{

@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include <ctype.h>
 /**
- * _isupper - checks if a char is uppercase
+ * _isdigit - checks digit
  *
  * @c: argument to pass to _islower
  *
  * Return: 1 if uppercase and 0 otherwise
  */
-int _isupper(int c)
+int _isdigit(int c)
 {
-	if (isupper(c))
+	if (isdigit(c))
 	{
 		return (1);
 	}

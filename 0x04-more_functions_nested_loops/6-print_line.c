@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
  * print_line - Prints numbers, from 0 to 14 ten times, followed by a new line
  *
@@ -12,8 +13,8 @@ void print_line(int c)
 	{
 		for (i = 0; i < c; i++)
 		{
-			putchar('_');
+			_putchar('_');
 		}
 	}
-	putchar('\n');
+	_putchar('\n');
 }

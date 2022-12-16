@@ -1,4 +1,5 @@
 #include <stdio.h>
+int _putchar(char c);
 /**
  * print_diagonal - Prints diagonal made of \
  *
@@ -14,14 +15,14 @@ void print_diagonal(int n)
 		{
 			for (j = 0; j < i; j++)
 			{
-				putchar(' ');
+				_putchar(' ');
 			}
-			putchar('\\');
+			_putchar('\\');
 			if (i < n - 1)
 			{
-				putchar('\n');
+				_putchar('\n');
 			}
 		}
 	}
-	putchar('\n');
+	_putchar('\n');
 }

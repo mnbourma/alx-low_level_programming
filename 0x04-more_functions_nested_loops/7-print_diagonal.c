@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * print_line - Prints numbers, from 0 to 14 ten times, followed by a new line
+ * print_diagonal - Prints diagonal made of \
  *
- * @c: length of line
+ * @c: length
  */
-void print_line(int c)
+void print_diagonal(int c)
 {
 	int i;
 	

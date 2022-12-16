@@ -23,7 +23,7 @@ void more_numbers(void)
 				putchar(c2);
 			}
         	}
-        	if (i < 10)
+        	if (i < 9)
         	{
             		putchar('\n');
         	}

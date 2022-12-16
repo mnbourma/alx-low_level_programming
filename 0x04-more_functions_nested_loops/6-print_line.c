@@ -2,13 +2,13 @@
 /**
  * print_line - Prints numbers, from 0 to 14 ten times, followed by a new line
  *
- * @c: length of line
+ * @n: length of line
  */
-void print_line(int c)
+void print_line(int n)
 {
 	int i;
 	
-	if (c > 0)
+	if (n > 0)
 	{
 		for (i = 0; i < c; i++)
 		{

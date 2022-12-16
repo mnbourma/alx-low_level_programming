@@ -1,9 +1,12 @@
 #include <stdio.h>
 int _putchar(char c);
+
 /**
  * print_square - prints a square made of #
+ *
  * @size: size of the square
- * */
+ **/
+
 void print_square(int size)
 {
 	int i, j;

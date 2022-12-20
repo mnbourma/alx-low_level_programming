@@ -8,12 +8,12 @@ void rev_string(char *s)
 {
 	int i;
 	int len;
-	char c;
+	char* c;
 
 	c = *s;
 	len = (int)strlen(s);
 	for (i = 0; i < len; i++)
 	{
-		*(s + i) = c[len - i +1];
+		*(s + i) = c[len - i + 1];
 	}
 }

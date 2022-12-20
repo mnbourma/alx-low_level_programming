@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * _puts - prints a string, followed by a new line
+ * puts2 - prints every other character
  * @s: the given string
  */
-void _puts(char *s)
+void puts2(char *s)
 {
 	int i;
 

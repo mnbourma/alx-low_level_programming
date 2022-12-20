@@ -8,7 +8,7 @@ void rev_string(char *s)
 {
 	int i;
 	int len;
-	char r[255];
+	char r[1000];
 
 	len = (int)strlen(s);
 	for (i = 0; i < len; i++)

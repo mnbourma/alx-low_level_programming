@@ -3,13 +3,14 @@
 /**
  * print_array - prints n elements of an array
  * @s: the given string
+ * @a: list of integers
  */
 void print_array(int *a, int n)
 {
 	int i, j;
 	char s[50];
 
-	for (i = 0; i < n; i ++)
+	for (i = 0; i < n; i++)
 	{	
 		sprintf(s,  "%d, ", a[i]);
 		for (j = 0; j < (int)strlen(s) - 2; j++)

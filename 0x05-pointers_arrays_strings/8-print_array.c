@@ -12,7 +12,7 @@ void print_array(int *a, int n)
 	for (i = 0; i < n; i ++)
 	{	
 		sprintf(s,  "%d, ", a[i]);
-		for (j = 0; j < strlen(s) - 2; j++)
+		for (j = 0; j < (int)strlen(s) - 2; j++)
 		{
 			putchar(s[j]);
 		}

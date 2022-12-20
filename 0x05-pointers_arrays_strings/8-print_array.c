@@ -16,7 +16,7 @@ void print_array(int *a, int n)
 		{
 			putchar(s[j]);
 		}
-		while (i < n - 1)
+		if (i < n - 1)
 		{
 			putchar(',');
 			putchar(' ');

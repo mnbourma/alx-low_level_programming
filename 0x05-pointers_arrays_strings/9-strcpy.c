@@ -4,6 +4,7 @@
  * _strcpy - copies the string pointed including the null byte
  * @dest: the destination
  * @src: source
+ * Return: dest
  */
 char *_strcpy(char *dest, char *src)
 {

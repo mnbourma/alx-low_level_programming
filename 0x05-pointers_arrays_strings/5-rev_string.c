@@ -14,6 +14,6 @@ void rev_string(char *s)
 	len = (int)strlen(s);
 	for (i = 0; i < len; i++)
 	{
-		*(s + i) = c[len - i + 1];
+		s[i] = c[len - i + 1];
 	}
 }

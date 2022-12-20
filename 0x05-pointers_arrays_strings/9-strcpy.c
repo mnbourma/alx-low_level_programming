@@ -7,7 +7,6 @@
  */
 char _strcpy(char *dest, char *src)
 {
-	int i;
-	char cp[(int)strlen(dest + 1)] = src;
-	return (cp);
+	dest = src;
+	return dest;
 }

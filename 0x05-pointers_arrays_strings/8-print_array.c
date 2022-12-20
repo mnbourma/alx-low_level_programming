@@ -2,8 +2,8 @@
 #include <string.h>
 /**
  * print_array - prints n elements of an array
- * @s: the given string
- * @a: list of integers
+ * @a: integer array
+ * @n: number of integers to print
  */
 void print_array(int *a, int n)
 {
@@ -11,7 +11,7 @@ void print_array(int *a, int n)
 	char s[50];
 
 	for (i = 0; i < n; i++)
-	{	
+	{
 		sprintf(s,  "%d, ", a[i]);
 		for (j = 0; j < (int)strlen(s) - 2; j++)
 		{

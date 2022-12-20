@@ -8,11 +8,9 @@ void rev_string(char *s)
 {
 	int i;
 	int len;
+	char c[] = s;
        	
 	len = (int)strlen(s);
-	char c[len];
-	
-	c = s;
 	for (i = 0; i < len; i++)
 	{
 		s[i] = c[len - i + 1];

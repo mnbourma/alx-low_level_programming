@@ -8,7 +8,7 @@ void _puts(char *s)
 {
 	int i;
 
-	for (i = 0; i < strlen(s); i++)
+	for (i = 0; i < (int)strlen(s); i++)
 	{
 		putchar(s[i]);
 	}

@@ -16,6 +16,7 @@ void puts_half(char *s)
 		{
 			putchar(s[i]);
 		}
+	}
 	else
 	{
 		n = (length_of_the_string - 1) / 2

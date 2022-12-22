@@ -12,7 +12,7 @@ char *string_toupper(char *s)
 	len = (int)strlen(s);
 	for (i = 0; i < len; i++)
 	{
-		s[i] = toupper(s[i]);
+		s[i] = '0';
 	}
 	return (s);
 }

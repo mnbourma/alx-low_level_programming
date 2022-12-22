@@ -7,13 +7,13 @@
  */
 char *leet(char *s)
 {
-	int i, j, len, n[] = {4, 3, 0, 7, 1};
+	size_t i, j;
+	int n[] = {4, 3, 0, 7, 1};
 	char c[] = "aeotl";
 
-	len = (int)strlen(s);
-	for (i = 0; i < len; i++)
+	for (i = 0; i < strlen(s); i++)
 	{
-		for (j = 0; j < 5; j++)
+		for (j = 0; j < strlen(c); j++)
 		{
 			if (s[i] == c[j] || s[i] == toupper(c[j]))
 			{

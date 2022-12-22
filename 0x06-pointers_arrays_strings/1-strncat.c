@@ -4,7 +4,7 @@
  * _strncat - concatenates two strings
  * @dest: first string
  * @src: second string
- * @n: n bytes
+ * @n: the number of bytes
  */
 char *_strncat(char *dest, char *src, int n)
 {

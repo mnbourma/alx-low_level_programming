@@ -1,6 +1,6 @@
+#include <main.h>
 #include <string.h>
 #include <ctype.h>
-#include <main.h>
 /**
  * string_toupper - puts string uppercase
  * @s: the given string

@@ -1,15 +1,16 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * string_toupper - changes all letters of a string to uppercase
+ * string_toupper - puts a string to uppercase
  * @s: first string
  * Return: an uppercase string
  */
 char *string_toupper(char *s);
 {
-	int i;
+	int i, len;
 
-	for (i = 0; i < (int)strlen(s); i++)
+	len = (int)strlen(s);
+	for (i = 0; i < len; i++)
 	{
 		s[i] = toupper(s[i]);
 	}

@@ -5,7 +5,7 @@
  * string_toupper - puts string uppercase
  * @s: the given string
  * Return: an uppercase string
- */
+ * */
 char *string_toupper(char *s)
 {
 	int i, l;

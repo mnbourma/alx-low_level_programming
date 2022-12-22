@@ -1,8 +1,8 @@
-#include <stdio.h>
 #include <string.h>
 #include <ctype.h>
+#include <main.h>
 /**
- * string_toupper - puts a string to uppercase
+ * string_toupper - puts string uppercase
  * @s: the given string
  * Return: an uppercase string
  */

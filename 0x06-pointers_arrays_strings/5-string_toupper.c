@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 /**
  * string_toupper - puts a string to uppercase
  * @s: first string
@@ -12,7 +13,7 @@ char *string_toupper(char *s)
 	len = (int)strlen(s);
 	for (i = 0; i < len; i++)
 	{
-		s[i] = '0';
+		s[i] = toupper(s[i]);
 	}
 	return (s);
 }

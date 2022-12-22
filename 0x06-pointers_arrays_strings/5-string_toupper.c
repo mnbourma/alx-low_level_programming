@@ -8,9 +8,10 @@
  * */
 char *string_toupper(char *s)
 {
-	int i, l;
+	int i;
+	size_t l;
 	
-	l = (int)strlen(s);
+	l = strlen(s);
 	for (i = 0; i < l; i++)
 	{
 		s[i] = toupper(s[i]);

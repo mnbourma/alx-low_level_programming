@@ -4,7 +4,7 @@
  */
 void fizz(void);
 void buzz(void);
-void main(void)
+int main(void)
 {
 	int i, j, k;
 
@@ -45,6 +45,7 @@ void main(void)
 		}
 	}
 	putchar('\n');
+	return (0);
 }
 void fizz(void)
 {

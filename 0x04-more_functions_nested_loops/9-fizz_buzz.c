@@ -55,6 +55,9 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
+/**
+ * fizz - prints Fizz
+ */
 void fizz(void)
 {
 	putchar('F');
@@ -62,6 +65,9 @@ void fizz(void)
 	putchar('z');
 	putchar('z');
 }
+/**
+ * buzz - prints Buzz
+ */
 void buzz(void)
 {
 	putchar('B');
@@ -69,6 +75,9 @@ void buzz(void)
 	putchar('z');
 	putchar('z');
 }
+/**
+ * fizz_buzz - prints FizzBuzz
+ */
 void fizz_buzz(void)
 {
 	putchar('F');

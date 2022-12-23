@@ -1,7 +1,6 @@
 #include <stdio.h>
 /**
- * print_line - Prints a line made of _
- *
+ * print_line - Prints a line made of
  * @n: number of how many _ to print
  **/
 void print_line(int n)

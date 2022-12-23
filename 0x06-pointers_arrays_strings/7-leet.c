@@ -12,7 +12,7 @@ char *leet(char *s)
 
 	for (i = 0; i < (int)strlen(s); i++)
 	{
-		for (j = 0; j < strlen(letters); j++)
+		for (j = 0; j < (int)strlen(letters); j++)
 		{
 			if (toupper(s[i]) == toupper(letters[j]))
 			{
@@ -20,4 +20,5 @@ char *leet(char *s)
 			}
 		}
 	}
+	return (s);
 }

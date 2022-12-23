@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
+ * print_line - prints a line of n length
  * @n: number of how many lines to print
  * */
 void print_line(int n)

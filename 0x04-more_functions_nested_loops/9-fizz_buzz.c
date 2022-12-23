@@ -4,6 +4,7 @@
  */
 void fizz(void);
 void buzz(void);
+void fizz_buzz(void);
 int main(void)
 {
 	int i, j, k;
@@ -17,7 +18,14 @@ int main(void)
 		}
 		if (i % 3 == 0)
 		{
-			fizz();
+			if (i % 5 == 0)
+			{
+				fizz_buzz();
+			}
+			else
+			{
+				fizz();
+			}
 		}
 		else if (i % 5 == 0)
 		{
@@ -56,6 +64,17 @@ void fizz(void)
 }
 void buzz(void)
 {
+	putchar('B');
+	putchar('u');
+	putchar('z');
+	putchar('z');
+}
+void fizz_buzz(void)
+{
+	putchar('F');
+	putchar('i');
+	putchar('z');
+	putchar('z');
 	putchar('B');
 	putchar('u');
 	putchar('z');

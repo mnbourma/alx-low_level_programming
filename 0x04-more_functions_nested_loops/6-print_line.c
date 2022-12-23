@@ -3,7 +3,7 @@
  * print_line - prints a line of length n.
  * Description: this fuction prints a line of n _
  * @n: line length.
- * */
+ */
 void print_line(int n)
 {
 	int i;

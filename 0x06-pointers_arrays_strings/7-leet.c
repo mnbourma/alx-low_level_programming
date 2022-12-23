@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 /**
  * leet - encodes a string to 1337
  * @s: string to encode

@@ -1,13 +1,12 @@
 #include <stdio.h>
 /**
- * print_diagonal - Prints diagonal made of \
- * @n: number of \ to print
- * */
+ * print_diagonal - prints diagonal
+ * @n: diagonal length
+ */
 void print_diagonal(int n)
 {
-	int i;
-	int j;
-	
+	int i, j;
+
 	if (n > 0)
 	{
 		for (i = 0; i < n; i++)

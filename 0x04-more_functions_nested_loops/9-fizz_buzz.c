@@ -47,7 +47,7 @@ int main(void)
 		{
 			k++;
 		}
-		if (i < 99)
+		if (i < 100)
 		{
 			putchar(' ');
 		}

@@ -24,5 +24,5 @@ int print_sign(int c)
 		putchar('-');
 		r = -1;
 	}
-	return (n);
+	return (r);
 }

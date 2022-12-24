@@ -3,7 +3,7 @@
 #include <string.h>
 /**
  * main - Entry point
- * Description - prints all possible different combinations of two digits
+ * Description - prints all possible combinations of two two-digit numbers
  * Return: ALways 0 (Success)
  */
 int main(void)

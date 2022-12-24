@@ -16,21 +16,15 @@ int main(void)
 		{
 			for (k = j; k < 10; k++)
 			{
-				if (i != j)
+				if (i != j && j != k && k != i)
 				{
-					if (i != k)
+					putchar(i + '0');
+					putchar(j + '0');
+					putchar(k + '0');
+					if (i < 7)
 					{
-						if (j != k)
-						{
-							putchar(i + '0');
-							putchar(j + '0');
-							putchar(k + '0');
-							if (i < 7)
-							{
-								putchar(',');
-								putchar(' ');
-							}
-						}
+						putchar(',');
+						putchar(' ');
 					}
 				}
 			}

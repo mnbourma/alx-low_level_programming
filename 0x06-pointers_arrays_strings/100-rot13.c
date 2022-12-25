@@ -15,7 +15,6 @@ char *rot13(char *s)
 		for (j = 0; j < (int)strlen(a); j++)
 		{
 			index = (j + 13) % 26;
-
 			if (toupper(s[i]) == toupper(a[j]))
 			{
 				s[i] = a[index];
@@ -25,7 +24,6 @@ char *rot13(char *s)
 	s[0] = toupper(s[0]);
 	s[1] = toupper(s[1]);
 	s[2] = toupper(s[2]);
-	putchar('\n');
 
 	return (s);
 }

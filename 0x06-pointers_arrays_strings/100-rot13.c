@@ -10,20 +10,15 @@
 char *rot13(char *s)
 {
 	int i, j;
-	char a[] = "abcdefghijklmnopqrstuvwxyz";
+	char a[] = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
 
 	for (i = 0; i < (int)strlen(s); i++)
 	{
 		for (j = 0; j < (int)strlen(a); j++)
 		{
-			if (s[i] == a[j])
+			if ((s[i]) == a[j])
 			{
-				s[i] = a[(j + 13) % 26];
-				break;
-			}
-			while (s[i] == toupper(a[j]))
-			{
-				s[i] = toupper(a[(j + 13) % 26]);
+				s[i] = a[(j + 26) % 52];
 				break;
 			}
 		}

@@ -5,6 +5,7 @@
  * rot13 - encodes a string using rot13
  * Description: rotate by 13
  * @s: string to encode
+ * Return: returns the encoded string
  */
 char *rot13(char *s)
 {
@@ -13,12 +14,13 @@ char *rot13(char *s)
 
 	for (i = 0; i < (int)strlen(s); i++)
 	{
+		*(s + i) = tolower(*(s + i));
 		for (j = 0; j < (int)strlen(a); j++)
 		{
 			index = (j + 13) % 26;
-			if (toupper(s[i]) == toupper(a[j]))
+			if (*(s + i) == a[j])
 			{
-				s[i] = a[index];
+				*(s + i) = a[index];
 				break;
 			}
 		}

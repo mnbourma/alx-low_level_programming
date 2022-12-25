@@ -9,18 +9,16 @@
  */
 char *rot13(char *s)
 {
-	int i, j, index;
+	int i, j;
 	char a[] = "abcdefghijklmnopqrstuvwxyz";
 
 	for (i = 0; i < (int)strlen(s); i++)
 	{
-		*(s + i) = tolower(*(s + i));
 		for (j = 0; j < (int)strlen(a); j++)
 		{
-			index = (j + 13) % 26;
-			if (*(s + i) == a[j])
+			if (tolower(s[i]) == tolower(a[j]))
 			{
-				*(s + i) = a[index];
+				s[i] = a[(j + 13) % 26];
 				break;
 			}
 		}
@@ -28,7 +26,6 @@ char *rot13(char *s)
 	s[0] = toupper(s[0]);
 	s[1] = toupper(s[1]);
 	s[2] = toupper(s[2]);
-	putchar('\n');
 
 	return (s);
 }

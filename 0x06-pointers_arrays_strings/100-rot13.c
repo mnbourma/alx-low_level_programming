@@ -21,7 +21,7 @@ char *rot13(char *s)
 				s[i] = a[(j + 13) % 26];
 				break;
 			}
-			else if (s[i] == toupper(a[j]))
+			while (s[i] == toupper(a[j]))
 			{
 				s[i] = toupper(a[(j + 13) % 26]);
 				break;

@@ -3,6 +3,7 @@
 #include <ctype.h>
 /**
  * rot13 - encodes a string using rot13
+ * Description: rotate by 13
  * @s: string to encode
  */
 char *rot13(char *s)
@@ -18,6 +19,7 @@ char *rot13(char *s)
 			if (toupper(s[i]) == toupper(a[j]))
 			{
 				s[i] = a[index];
+				break;
 			}
 		}
 	}

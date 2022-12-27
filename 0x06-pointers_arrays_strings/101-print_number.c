@@ -26,6 +26,7 @@ void print_number(int n)
 			if (i == j)
 			{
 				putchar((i % 10) + '0');
+				i *= 10;
 				break;
 			}
 			j /= 10;

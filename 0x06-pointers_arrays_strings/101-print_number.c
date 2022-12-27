@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include <string.h>
-#include <ctype.h>
+#include <stdint.h>
 /**
  * print_number - prints an integer.
  * Description: prints any given integer using putchar.
@@ -8,7 +7,7 @@
  */
 void print_number(int n)
 {
-	int i;
+	int64_t i;
 
 	i = 0;
 	if (n < 0)
@@ -18,7 +17,7 @@ void print_number(int n)
 	}
 	do
 	{
-		int j;
+		int64_t j;
 		
 		j = n;
 		do
@@ -26,7 +25,11 @@ void print_number(int n)
 			if (i == j)
 			{
 				putchar((i % 10) + '0');
-				i *= 10;
+				i = (i * 10) - 1;
+				if(i == -1)
+				{
+					i = 0;
+				}
 				break;
 			}
 			j /= 10;

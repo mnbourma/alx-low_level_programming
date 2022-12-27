@@ -15,27 +15,23 @@ void print_number(int n)
 		n = -n;
 		putchar('-');
 	}
-	do
-	{
+	do {
 		int64_t j;
-		
+
 		j = n;
-		do
-		{
+		do {
 			if (i == j)
 			{
 				putchar((i % 10) + '0');
-				i = (i * 10) - 1;
-				if(i == -1)
+				i = i * 10 - 1;
+				if (i == -1)
 				{
 					i = 0;
 				}
 				break;
 			}
 			j /= 10;
-		}
-		while (j > 0);
+		} while (j > 0);
 		i++;
-	}
-	while (i < n + 1);
+	} while (i < n + 1);
 }

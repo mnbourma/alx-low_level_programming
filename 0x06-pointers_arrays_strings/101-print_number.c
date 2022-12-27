@@ -9,13 +9,13 @@ void print_number(int n)
 {
 	int64_t i;
 
-	i = 0;
 	if (n < 0)
 	{
 		n = -n;
 		putchar('-');
 	}
-	do {
+	for (i = n / (n - 1); i < n + 1; i++)
+	{
 		int64_t j;
 
 		j = n;
@@ -32,6 +32,5 @@ void print_number(int n)
 			}
 			j /= 10;
 		} while (j > 0);
-		i++;
-	} while (i < n + 1);
+	}
 }

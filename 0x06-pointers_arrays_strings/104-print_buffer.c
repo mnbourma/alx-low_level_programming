@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <string.h>
-#include <ctype.h>
 /**
  * print_buffer - prints a buffer
  * Description: prints a buffer
@@ -20,7 +19,7 @@ void print_buffer(char *b, int size)
 		printf("%08x: ", i);
 		for (j = i; j < i + 10; i += 2)
 		{
-			printf("%02x%02x ", b[j], b[j + 2]);
+			printf("%02x%02x ", b[j], b[j + 1]);
 		}
 		for (j = i; j < i + 10; j++)
 		{

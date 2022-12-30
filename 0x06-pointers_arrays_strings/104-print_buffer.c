@@ -1,18 +1,13 @@
 #include <stdio.h>
 /**
- * print_buffer - prints a buffer
- * Description: prints a buffer
- * @b: the buffer
- * @size: buffer size
+ * print_buffer - prints a buffer contents
+ * @b: the given buffer
+ * @size: given buffer size
  */
 void print_buffer(char *b, int size)
 {
 	int i, j;
 
-	if (size == 0)
-	{
-		putchar('\n');
-	}
 	for (i = 0; i < size; i += 10)
 	{
 		printf("%08x: ", i);

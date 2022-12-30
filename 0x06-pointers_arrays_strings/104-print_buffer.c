@@ -1,5 +1,4 @@
 #include <string.h>
-void print_10(char*, int, int);
 /**
  * print_buffer - prints a buffer
  * Description: prints a buffer
@@ -36,7 +35,24 @@ void print_buffer(char *b, int size)
 				break;
 			}
 		}
-		print_10(b, i, size);
+		for (j = i; j < i + 10; j++)
+		{
+			if (j < size)
+			{
+				if (isprint(b[j]))
+				{
+					putchar(b[j]);
+				}
+				else
+				{
+					putchar('.');
+				}
+			}
+			if (j % 10 == 9)
+			{
+				break;
+			}
+		}
 		putchar('\n');
 	}
 }

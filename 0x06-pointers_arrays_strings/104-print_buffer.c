@@ -1,9 +1,10 @@
 #include <stdio.h>
 /**
  * print_buffer - prints a buffer contents
+ * Description: this funtion prints ten bytes per line
  * @b: the given buffer
  * @size: given buffer size
- */
+ **/
 void print_buffer(char *b, int size)
 {
 	int i, j;

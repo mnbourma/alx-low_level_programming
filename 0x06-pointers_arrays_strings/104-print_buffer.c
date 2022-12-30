@@ -12,7 +12,7 @@ void print_buffer(char *b, int size)
 	for (i = 0; i < size; i += 10)
 	{
 		printf("%08x: ", i);
-		for (j = i; j < i + 10; i += 2)
+		for (j = i; j < i + 10; j += 2)
 		{
 			if (j < size)
 			{
@@ -30,59 +30,18 @@ void print_buffer(char *b, int size)
 			{
 				printf("   ");
 			}
-			if (j % 10 == 8)
-			{
-				break;
-			}
 		}
 		for (j = i; j < i + 10; j++)
 		{
-			if (j < size)
-			{
-				if (isprint(b[j]))
-				{
-					putchar(b[j]);
-				}
-				else
-				{
-					putchar('.');
-				}
-			}
-			if (j % 10 == 9)
-			{
-				break;
-			}
-		}
-		putchar('\n');
-	}
-}
-/**
- * print_10 - prints the content of the buffer
- * Description: prints in ten bytes the content of a buffer
- * @b: the given buffer
- * @index: index of the loop
- * @size: buffer's size
- */
-void print_10(char *b, int index, int size)
-{
-	int j;
-	
-	for (j = index; j < index + 10; j++)
-	{
-		if (j < size)
-		{
-			if (isprint(b[j]))
+			if (j < size && isprint(b[j]))
 			{
 				putchar(b[j]);
 			}
-			else
+			else if (j < size)
 			{
 				putchar('.');
 			}
 		}
-		if (j % 10 == 9)
-		{
-			break;
-		}
+		putchar('\n');
 	}
 }

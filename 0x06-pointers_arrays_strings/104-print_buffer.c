@@ -1,4 +1,4 @@
-#include <string.h>
+#include <stdio.h>
 /**
  * print_buffer - prints a buffer
  * Description: prints a buffer

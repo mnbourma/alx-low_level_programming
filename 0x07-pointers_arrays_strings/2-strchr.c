@@ -6,7 +6,7 @@
  * @c: This is the character to be searched.
  * Return: a pointer to the first occurrence of the character.
  */
-char *_strchr(char *s, char c);
+char *_strchr(char *s, char c)
 {
 	strchr(s, c);
 	return (s);

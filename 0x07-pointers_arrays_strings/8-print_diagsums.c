@@ -12,15 +12,19 @@ void print_diagsums(int *a, int size)
 
 	sum1 = 0;
 	sum2 = 0;
+	for (i = 0; i < size * size; i += size + 1)
+	{
+		sum1 += a[i];
+	}
 	for (i = 0; i < size; i++)
 	{
-		sum1 += c3[i][i];
-		sum2 += c3[i][size - (i + 1)];
+		sum2 += a[(size - 1) * i + size - 1];
 	}
 	print_number(sum1);
 	putchar(',');
 	putchar(' ');
 	print_number(sum2);
+	putchar('\n');
 }
 /**
  * print_number - prints an integer.
@@ -29,31 +33,22 @@ void print_diagsums(int *a, int size)
  */
 void print_number(int n)
 {
-	int64_t i;
+	int i, j, s[100];
 
+	j = 0;
 	if (n < 0)
 	{
 		n = -n;
 		putchar('-');
 	}
-	for (i = n / (n - 1); i < n + 1; i++)
+	for (i = n; i > 0; i /= 10)
 	{
-		int64_t j;
-
-		j = n;
-		do {
-			if (i == j)
-			{
-				putchar((i % 10) + '0');
-				i = i * 10 - 1;
-				if (i == -1)
-				{
-					i = 0;
-				}
-				break;
-			}
-			j /= 10;
-		} while (j > 0);
+		s[j] = i % 10;
+		j++;
+	}
+	for (i = 0; i < j; i++)
+	{
+		putchar(s[j - (i + 1)] + '0');
 	}
 }
 

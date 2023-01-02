@@ -13,7 +13,10 @@ void print_chessboard(char (*a)[8])
 	{
 		for (j = 0; j < col; j++)
 		{
-			putchar(a[i][j]);
+			if (a[i][j] != ' ')
+			{
+				putchar(a[i][j]);
+			}
 		}
 		if (i < row - 1)
 		{

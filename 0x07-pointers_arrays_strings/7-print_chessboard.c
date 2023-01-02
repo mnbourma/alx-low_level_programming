@@ -5,13 +5,11 @@
  */
 void print_chessboard(char (*a)[8])
 {
-	int i, j, row, col;
+	int i, j;
 
-	col = sizeof(a[0]);
-	row = sizeof(a) / col;
-	for (i = 0; i < row; i++)
+	for (i = 0; i < 8; i++)
 	{
-		for (j = 0; j < col; j++)
+		for (j = 0; j < 8; j++)
 		{
 			putchar(a[i][j]);
 		}

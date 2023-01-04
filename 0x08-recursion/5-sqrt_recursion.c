@@ -5,6 +5,7 @@
  * @n: this is the given number.
  * Return: the square root value of n.
  */
+float sqrt(int n);
 int _sqrt_recursion(int n)
 {
 	if (sqrt(n) - (int)sqrt(n) == 0)

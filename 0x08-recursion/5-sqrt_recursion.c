@@ -5,7 +5,7 @@
  * @n: this is the given number.
  * Return: the square root value of n.
  */
-double sqrt(double n);
+double sqrt(double x);
 int _sqrt_recursion(int n)
 {
 	if (sqrt(n) - (int)sqrt(n) == 0)

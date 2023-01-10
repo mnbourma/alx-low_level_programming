@@ -8,19 +8,19 @@
  */
 int **alloc_grid(int width, int height)
 {
-	int i, j, *s;
+	int i, j;
+	int (*two_dim)[width] = malloc(sizeof(int[height][width]));
 
-	s = (int *)malloc(width * height * sizeof(int));
 	if (width > 0 && height > 0)
 	{
 		for (i = 0; i < height; i++)
 		{
 			for (j = 0; j < width; j++)
 			{
-				s[i][j] = 0;
+				two_dim[i][j] = 0;
 			}
 		}
-		return (s);
+		return (two_dim);
 	}
 	return (NULL);
 }

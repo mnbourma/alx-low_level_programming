@@ -30,7 +30,10 @@ int **alloc_grid(int width, int height)
 			two_dim_array[i][j] = 0;
 		}
 	}
-	free(*two_dim_array);
+	for (i = 0; i < width; i++)
+	{
+		free(two_dim_arrai[i]);
+	}
 	free(two_dim_array);
 	return (two_dim_array);
 }

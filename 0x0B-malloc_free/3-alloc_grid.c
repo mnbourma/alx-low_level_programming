@@ -9,7 +9,7 @@
 int **alloc_grid(int width, int height)
 {
 	int i, j;
-	int **two_dim_array = (int **)malloc(width * sizeof(int *));
+	int **two_dim_array = (int **)malloc(height * sizeof(int *));
 
 	if (two_dim_array == NULL)
 	{

@@ -8,20 +8,24 @@
  */
 int **alloc_grid(int width, int height)
 {
-	int row, col;
-	int *arr = (int *)malloc(row * col * sizeof(int));
+	int **two_dim_array, r, c;
 
-	if (arr == NULL)
+	two_dim_array = malloc(sizeof(int *) * height);
+	if (two_dim_array == NULL)
 	{
 		return (NULL);
 	}
-	for (row = 0; row < height; row++)
+	for (r = 0; r < height; r++)
 	{
-		for (col = 0; col < width; col++)
+		two_dim_array = malloc(sizeof(int) * width);
+	}
+	for (r = 0; r < height; r++)
+	{
+		for (c = 0; c < width; c++)
 		{
-			*(arr + row * width + col) = 0;
+			two_dim_array[r][c] = 0;
 		}
 	}
-	free(arr);
-	return (arr);
+	free(two_dim_array);
+	return (two_dim_array);
 }

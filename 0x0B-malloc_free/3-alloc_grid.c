@@ -32,7 +32,7 @@ int **alloc_grid(int width, int height)
 	}
 	for (i = 0; i < width; i++)
 	{
-		free(two_dim_arrai[i]);
+		free(two_dim_array[i]);
 	}
 	free(two_dim_array);
 	return (two_dim_array);

@@ -8,10 +8,12 @@
 void print_all(const char * const format, ...)
 {
 	va_list vars;
-	int i = 0;
-	char *str, *sep = ", ";
+	int i;
+	char *str, *sep;
 
 	va_start(vars, format);
+	i = 0;
+	sep = ", ";
 	while (i < (int)strlen(format))
 	{
 		if (i > (int)strlen(format) - 2)

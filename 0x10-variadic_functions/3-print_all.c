@@ -14,7 +14,7 @@ void print_all(const char * const format, ...)
 	va_start(vars, format);
 	while (i < (int)strlen(format))
 	{
-		if (i > len - 2)
+		if (i > (int)strlen(format) - 2)
 		{
 			sep = "";
 		}
